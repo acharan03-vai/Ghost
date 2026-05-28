@@ -1,43 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Project Loading...</title>
-    <style>
-        body {
-            background: #111116;
-            color: #ffffff;
-            font-family: system-ui, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .card {
-            padding: 2rem;
-            border-radius: 16px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            color: #888;
-        }
-    </style>
+    <title>Our Journey ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <h1>🎂 Project Initialized</h1>
-        <p>Magic incoming soon...</p>
+
+    <canvas id="starfield"></canvas>
+
+    <div id="magic-overlay">
+        <div class="tap-prompt">Tap on the screen to start the magic🪄🪄</div>
     </div>
+
+    <main id="main-content" class="hidden">
+        <div class="card">
+            <h1 class="birthday-title">Happy Birthday! 🎉</h1>
+            
+            <div class="story-container">
+                <p>It's crazy to think about how far we've come as friends. From the random inside jokes to the late-night deep conversations, every single moment has been unforgettable.</p>
+                
+                <p>You've been the kind of friend who is always there, through the chaotic high points and the quiet low ones. I couldn't ask for a better partner in crime.</p>
+                
+                <p>As you celebrate another year today, I just wanted to remind you of how much our friendship means to me. Here is to 20-30 more lines of memories we haven't even written yet!</p>
+                
+                </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
